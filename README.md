@@ -1,14 +1,14 @@
 # Anti-AFK Bot
 
-A specialized Python-based automation tool designed for gameplay loop automation and repetitive task execution in Roblox via low-level hardware keyboard emulation.
+A specialized Python-based automation tool designed for gameplay loop automation.
 
 ## Project Overview
 
-This bot is a console application built specifically for the Windows operating system. Unlike generic software clickers, this solution utilizes low-level **Scan Codes** instead of standard Virtual Key Codes. This approach ensures that input signals are correctly intercepted and processed by DirectX-driven 3D game engines like Roblox, eliminating the common issue where character movements fail to register inside the game world.
+This bot is a console application built specifically for the Windows operating system. Unlike generic software clickers, this solution utilizes low-level **Scan Codes** instead of standard Virtual Key Codes. This approach ensures that input signals are correctly intercepted and processed by any software, including applications and DirectX-driven 3D game engines, eliminating the common issue where character movements fail to register inside the targeted window.
 
 ## Key Features
 
-*   **Low-Level Emulation:** Built on top of the `pydirectinput` library to guarantee precise execution of key states (`W`, `A`, `S`, `D`, `Space`, etc.) within 3D game environments.
+*   **Low-Level Emulation:** Built on top of the `pydirectinput` library to guarantee precise execution of key states (`W`, `A`, `S`, `D`, `Space`, etc.) within 3D environments.
 *   **Asynchronous Global Hook:** Registers a system-wide keyboard hook for the `END` key. Pressing it triggers an immediate break in execution, releases all active keys, and transfers control back to the main console menu safely.
 *   **Diagonal Movement Support:** Supports simultaneous key combinations using the plus sign operator (e.g., `w+d`) for diagonal travel patterns or joint action execution.
 *   **Flexible Config Parsing:** Automatically processes both continuous hold intervals (e.g., `w3`) and single instantaneous click events (e.g., `space`) within the same configuration sequence.
@@ -22,7 +22,7 @@ The application leverages a non-blocking precise timing loop that yields every 2
 
 *   **Operating System:** Windows 10 or Windows 11
 *   **Runtime Environment:** Python version 3.8 or higher
-*   **Access Privileges:** Administrative rights (required to establish the low-level global keyboard hook over the Roblox application interface)
+*   **Access Privileges:** Administrative rights (required to establish the low-level global keyboard hook over targeted application interfaces)
 
 ## Dependencies Installation
 
@@ -62,5 +62,5 @@ Macro sequences are structured inside plain text files using the `.txt` extensio
     *   `2` – Import macro.
     *   `3` – Reset macro.
     *   `4` – Exit.
-4. After selecting option `1`, a 5-second countdown will begin, allowing you sufficient time to click into and focus the Roblox game window.
+4. After selecting option `1`, a 5-second countdown will begin, allowing you sufficient time to click into and focus the active window.
 5. To stop the automation routine at any point, press the `END` key on your keyboard.
