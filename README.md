@@ -58,9 +58,9 @@ Macro sequences are structured inside plain text files using the `.txt` extensio
 1. Place the main Python script file and your custom configuration text files (e.g., `macro.txt`) inside the exact same folder directory.
 2. Execute the Python script. The application will prompt for User Account Control (UAC) elevation to obtain Administrative privileges.
 3. Interact with the console menu by pressing the corresponding number on your keyboard (the terminal uses immediate character reading, so pressing `Enter` after the number is not required):
-    *   `1` – Execute the current active macro profile.
-    *   `2` – Import and switch to a new configuration file.
-    *   `3` – Reset the current profile back to the default factory layout (`w3,s3,~`).
-    *   `4` – Exit the application safely.
+    *   `1` – Start bot\macro.
+    *   `2` – Import macro.
+    *   `3` – Reset macro.
+    *   `4` – Exit.
 4. After selecting option `1`, a 5-second countdown will begin, allowing you sufficient time to click into and focus the Roblox game window.
 5. To stop the automation routine at any point, press the `END` key on your keyboard.
