@@ -1,4 +1,4 @@
-# Roblox Keyboard Macro Bot
+# Anti-AFK Bot
 
 A specialized Python-based automation tool designed for gameplay loop automation and repetitive task execution in Roblox via low-level hardware keyboard emulation.
 
